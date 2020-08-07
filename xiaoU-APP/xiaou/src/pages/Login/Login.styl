@@ -1,0 +1,66 @@
+@import '../../stylus/color.styl';
+@import '../../stylus/Size.styl';
+.login {
+    width: 100vw;
+    height: 100vh;
+    font-size: $h1;
+
+    .header {
+        width: 100vw;
+        height: 0.4rem;
+        background-color: $primary-color;
+        overflow: hidden;
+        color: $fontSelectColor;
+        text-align: center;
+
+        .tex-login {
+            line-height: 0.4rem;
+        }
+
+        .tex-register {
+            float: right;
+            line-height: 0.4rem;
+            padding-right: $paddingRight;
+        }
+    }
+
+    .content {
+        width: 2.69rem;
+        height: 1.9rem;
+        // background: #CCC;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        margin: auto;
+
+        // margin-left: 25px;
+        // margin-right: 25px;
+        .content-crd {
+            width: 100%;
+            height: 0.34rem;
+            border-bottom: 1px solid #333;
+            margin-bottom: 0.26rem;
+        }
+
+        .info {
+            overflow: hidden;
+            margin-bottom: 0.2rem;
+        }
+
+        .info span {
+            float: right;
+        }
+
+        .btn {
+            width: 100%;
+            height: 0.45rem;
+            color: $fontSelectColor;
+            background: $primary-color;
+            text-align: center;
+            line-height: 0.45rem;
+            border-radius: 10px;
+        }
+    }
+}
