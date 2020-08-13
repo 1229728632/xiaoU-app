@@ -1,0 +1,167 @@
+@import '../../stylus/color.styl';
+@import '../../stylus/Size.styl';
+
+.mine {
+    width: 100vw;
+    height: 100vh;
+
+    .topBar {
+        display: flex;
+        width: 100vw;
+        height: 2.6rem;
+        flex-direction: column;
+
+        .top {
+            position: relative;
+            width: 100%;
+            height: 50%;
+            background-color: $primary-color;
+            padding: 0.08rem;
+            box-sizing: border-box;
+            text-align: center;
+
+            span {
+                width: 0.3rem;
+                height: 0.3rem;
+            }
+
+            h2 {
+                display: inline-block;
+                font-size: $h3;
+                color: $fontSelectColor;
+            }
+
+            .left-ioc {
+                float: left;
+                width: 0.3rem;
+                height: 0.3rem;
+                background: url('../../static/img/Mine/set.png') no-repeat;
+                background-position: center center;
+            }
+
+            .right-ico {
+                float: right;
+                width: 0.3rem;
+                height: 0.3rem;
+                background: url('../../static/img/Mine/news.png') no-repeat;
+                background-position: center center;
+            }
+        }
+
+        .bottom {
+            position: relative;
+            width: 100vw;
+            height: 50%;
+            background-color: $fontSelectColor;
+
+            .touxiang {
+                position: absolute;
+                width: 1rem;
+                height: 1.2rem;
+                left: 1.2rem;
+                bottom: 0.8rem;
+
+                img {
+                    width: 1rem;
+                    height: 1rem;
+                    border-radius: 50%;
+                    border: 0.06rem solid #fff;
+                    z-index: 999;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+
+            .bottom-con {
+                position: absolute;
+                width: 100vw;
+                height: 0.4rem;
+                padding: 0.1rem;
+                box-sizing: border-box;
+                left: 0;
+                bottom: 0;
+
+                .ico {
+                    display: inline-block;
+                    width: 0.3rem;
+                    height: 0.3rem;
+                    background: url('../../static/img/Mine/keep.png') no-repeat;
+                    background-position: center center;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+    .order {
+        display: flex;
+        width: 100vw;
+        height: 1.39rem;
+        flex-direction: column;
+        background-color: $fontSelectColor;
+
+        .orderTop {
+            width: 100%;
+            height: 40%;
+            padding: 0.2rem 0.4rem;
+            box-sizing: border-box;
+            border-bottom: 1px solid #333;
+
+            .chakan {
+                float: right;
+                color: #ccc;
+            }
+        }
+
+        .orderBottom {
+            display: flex;
+            width: 100%;
+            height: 60%;
+            justify-content: space-evenly;
+            margin-top: 0.1rem;
+
+            .item {
+                display: flex;
+                width: 0.6rem;
+                height: 0.6rem;
+                flex-direction: column;
+                align-items: center;
+
+                .imgs {
+                    width: 0.3rem;
+                    height: 0.3rem;
+                    background: url('../../static/img/Mine/icon_refund.png') no-repeat;
+                    background-position: center center;
+                    background-size: 0.2rem 0.2rem;
+                }
+
+                .imgs:after {
+                    content: '8';
+                    display: block;
+                    width: 0.18rem;
+                    height: 0.18rem;
+                    background: red;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 0.18rem;
+                    border-radius: 50%;
+                    position: relative;
+                    left: 0.2rem;
+                    top: -0.03rem;
+                }
+            }
+        }
+    }
+
+    .shouhuo {
+        width: 100vw;
+        height: 0.55rem;
+        background-color: $fontSelectColor;
+        margin-top: 0.08rem;
+        box-sizing: border-box;
+        line-height: 0.55rem;
+        padding-left: 0.1rem;
+    }
+}

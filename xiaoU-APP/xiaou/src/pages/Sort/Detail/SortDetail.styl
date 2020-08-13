@@ -1,0 +1,50 @@
+@import '../../../stylus/color.styl';
+
+header {
+    width: 100vw;
+    height: 0.35rem;
+    background: $primary-color;
+    text-align: center;
+    line-height: 0.35rem;
+    color: $HomeBackground;
+}
+
+.sortDetail {
+    width: 100vw;
+    height: 1rem;
+    display: flex;
+
+    .img {
+        display: inline-block;
+        width: 30%;
+        height: 0.86rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .con {
+        padding: 0.2rem;
+        padding-top: 0rem;
+
+        h3 {
+            margin-bottom: 0.1rem;
+        }
+
+        .price {
+            color: red;
+        }
+
+        .btn {
+            width: 0.8rem;
+            height: 0.37rem;
+            background: $primary-color;
+            color: $HomeBackground;
+            text-align: center;
+            line-height: 0.37rem;
+            border-radius: 0.1rem;
+        }
+    }
+}

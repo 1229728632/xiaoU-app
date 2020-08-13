@@ -1,0 +1,47 @@
+@import '../../../../stylus/color.styl';
+
+.listBox {
+    width: 100vw;
+    height: 1rem;
+
+    .listItem {
+        margin-top: 0.1rem
+        .item-img {
+            margin-top: 0.05rem;
+            width: 1.19rem;
+            height: 1.19rem;
+            vertical-align: middle;
+        }
+
+        .item-right-con {
+            display: inline-block;
+            margin-left: 0.4rem;
+            box-sizing: border-box;
+
+            .item-name {
+                // margin-bottom: 0.2rem;
+                // box-sizing: border-box;
+            }
+
+            .item-price-box {
+                box-sizing: border-box;
+
+                .item-price {
+                    display: inline-block;
+                    color: red;
+                    height: 0.2rem;
+                    // width 100vw;
+                }
+
+                .item-btn {
+                    width: 1rem;
+                    height: 0.33rem;
+                    background: $primary-color;
+                    border-radius: 0.2rem;
+                    text-align: center;
+                    line-height: 0.33rem;
+                }
+            }
+        }
+    }
+}

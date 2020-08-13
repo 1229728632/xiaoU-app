@@ -1,0 +1,118 @@
+@import '../../stylus/color.styl';
+
+.shop {
+    width: 100vw;
+    height: auto;
+    padding-bottom: 2.24rem;
+    overflow: hidden;
+
+    .header {
+        width: 100vw;
+        height: 0.33rem;
+        text-align: center;
+        line-height: 0.33rem;
+        color: $fontSelectColor;
+        background: $primary-color;
+    }
+
+    .shop-item {
+        width: 100vw;
+        height: 0.33rem;
+        padding-bottom: 1.5rem
+
+
+        .shopinner {
+            padding-bottom: 1.5rem
+            p {
+                margin-left: 0.14rem;
+                width: 100%;
+                height: 0.31rem;
+            }
+
+            .item-con {
+                float: left;
+                width: 100vw;
+                height: 1rem;
+                overflow: hidden;
+
+                .inner-del {
+                    margin-left: -0.7rem;
+                }
+
+                .inner {
+                    float: left;
+                    width: 4.4rem;
+                    height: 1rem;
+                    transition: all 0.3s;
+
+                    img {
+                        float: left;
+                    }
+
+                    .select-chekbox {
+                        margin-top: 0.5rem;
+                    }
+
+                    .item-shop-img {
+                        width: 1rem;
+                        height: 1rem;
+                    }
+
+                    .tex-tit {
+                        float: left;
+
+                        h3 {
+                            margin-bottom: 0.2rem;
+                            font-size: 23px;
+                        }
+
+                        span {
+                            width: 0.4rem;
+                            height: 0.7rem;
+                            border: 1px solid #ccc;
+                        }
+
+                        button {
+                            width: 0.4rem;
+                            height: 0.3rem;
+                        }
+
+                        p {
+                            margin-top: 0.1rem;
+                        }
+                    }
+
+                    .shop-item-del {
+                        float: right;
+                        width: 1rem;
+                        height: 100%;
+                        background: $primary-color;
+                        color: #fff;
+                        padding-left: 0.2rem
+                        box-sizing: border-box
+                        line-height: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .shop-footer {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        height: 1rem;
+        left: 0;
+        bottom: 0.21rem;
+        border-top: 1px solid #ccc;
+        background: #fff
+
+        .all {
+            float: left;
+            margin-left: 0.2rem;
+            // width 0.6rem
+            text-align: center;
+            padding-top: 0.2rem;
+        }
+    }
+}

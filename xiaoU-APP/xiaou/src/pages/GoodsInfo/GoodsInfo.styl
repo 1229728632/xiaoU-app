@@ -1,0 +1,80 @@
+@import '../../stylus/color.styl';
+
+.goodsInfo {
+    width: 100vw;
+    height: auto;
+
+    .header {
+        width: 100vw;
+        height: 0.33rem;
+        text-align: center;
+        line-height: 0.33rem;
+        color: $fontSelectColor;
+        background: $primary-color;
+    }
+
+    .imgBox {
+        width: 100wv;
+        height: 1.74rem;
+
+        img {
+            width: 100%;
+            height: 1.74rem;
+        }
+    }
+
+    .titBox {
+        width: 100vw;
+        height: 1.14rem;
+        background: #fff;
+        color: #333;
+        padding: 0.2rem;
+        box-sizing: border-box;
+        margin-bottom: 0.2rem;
+
+        .shoucang {
+            float: right;
+            color: #ff0000;
+        }
+
+        p {
+            color: red;
+            margin-top: 0.2rem;
+            box-sizing: border-box;
+
+            span {
+                padding: 0.02rem;
+                border: 1px solid $primary-color;
+                color: $primary-color;
+                margin-left: 0.1rem;
+            }
+        }
+
+        .yuanjia {
+            color: #333;
+            text-decoration: line-through;
+            margin-top: 0;
+        }
+    }
+
+    .add {
+        width: 100vw;
+        height: 0.5rem;
+        background: #fff;
+        border-top: 1px solid #ccc;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+
+        .add-tit {
+            width: 35%;
+            height: 100%;
+            text-align: center;
+            line-height: 0.5rem;
+            color: #fff;
+            float: right;
+            background-color: $primary-color;
+        }
+    }
+}
